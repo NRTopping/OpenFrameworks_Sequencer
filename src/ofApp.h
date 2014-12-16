@@ -2,7 +2,6 @@
 
 #include "ofMain.h"
 #include "NoteButton.h"
-#include "Emitter.h"
 
 #define NUM_NOTES 16
 #define BUTTON_DIM 40
@@ -29,7 +28,7 @@ public:
   
 private:
   NoteButton m_aButtons[NUM_NOTES][NUM_NOTES];
-  Emitter    m_aNotes[NUM_NOTES];
+  ofSoundPlayer ma_sounds[NUM_NOTES];
   
   int m_iSequencerPos;
   int m_iBPM;
@@ -41,6 +40,4 @@ private:
   
   int prevDragI;
   int prevDragJ;
-  ofShader shader;
-  ofPlanePrimitive plane;
 };

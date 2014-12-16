@@ -10,6 +10,20 @@ void ofApp::setup(){
   
   ofSetFrameRate(60);
   
+  // load the tones
+  string path = "tones";
+  
+  ofDirectory dir(path);
+  dir.allowExt("mp3");
+  dir.listDir();
+  for (int i = 0; i < dir.numFiles(); i++) {
+    std::cout << dir.getPath(i) << std::endl;
+    ma_sounds[i].loadSound(dir.getPath(i)); // load the sound.
+    ma_sounds[i].setMultiPlay(true); // allow multiple play copies.
+  }
+  
+  
+  // set up the audio files
   for (int i=0; i < NUM_NOTES; i++) {
    // m_aNotes[i].setUp(i);
   }
@@ -50,8 +64,7 @@ void ofApp::update(){
     // check which notes should play
     for (int i = 0; i < NUM_NOTES; i++) {
       if (m_aButtons[m_iSequencerPos][i].isOn()) {
-        // play tone, etc. TODO
-        // Decay volume based on how long tone has been playing?
+        ma_sounds[i].play();
       }
     }
     

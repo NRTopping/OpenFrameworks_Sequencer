@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94E024A71A3E692400A0A615 /* Emitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E024A51A3E692400A0A615 /* Emitter.cpp */; };
 		94E3A6B51A3D4B51000F78E8 /* NoteButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E3A6B31A3D4B51000F78E8 /* NoteButton.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -61,8 +60,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		94E024A51A3E692400A0A615 /* Emitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Emitter.cpp; path = ../Emitter.cpp; sourceTree = "<group>"; };
-		94E024A61A3E692400A0A615 /* Emitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Emitter.h; path = ../Emitter.h; sourceTree = "<group>"; };
 		94E3A6B31A3D4B51000F78E8 /* NoteButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteButton.cpp; sourceTree = "<group>"; };
 		94E3A6B41A3D4B51000F78E8 /* NoteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteButton.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -186,8 +183,6 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				94E024A51A3E692400A0A615 /* Emitter.cpp */,
-				94E024A61A3E692400A0A615 /* Emitter.h */,
 				94E3A6B31A3D4B51000F78E8 /* NoteButton.cpp */,
 				94E3A6B41A3D4B51000F78E8 /* NoteButton.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -295,7 +290,6 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				94E3A6B51A3D4B51000F78E8 /* NoteButton.cpp in Sources */,
-				94E024A71A3E692400A0A615 /* Emitter.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
