@@ -6,7 +6,6 @@
 void ofApp::setup(){
   ofBackground(20,20,20);
   
-  m_fCounter = 0.0F;
   
   ofSetFrameRate(60);
   
@@ -102,6 +101,7 @@ void ofApp::draw(){
       myRect.height = BUTTON_DIM;
       
       ofRectRounded(myRect, 5.0f); // radius of 5.
+
     }
   }
   ofSetColor(20, 20, 20);
@@ -151,7 +151,7 @@ void ofApp::mouseDragged(int x, int y, int button){
     }
   }
   
-  if (button == 0 && (i > -1 && j > -1) && (i != prevDragI && j != prevDragJ)) {
+  if (button == 0 && (i > -1 && j > -1) && (i != prevDragI || j != prevDragJ)) {
     m_aButtons[i][j].toggleOffOn();
     prevDragI = i;
     prevDragJ = j;

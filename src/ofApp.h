@@ -36,7 +36,6 @@ private:
   float m_fLastStartTime;
   bool m_bSetVal;
   int m_iMovedThisFrame;
-  float m_fCounter;
   
   int prevDragI;
   int prevDragJ;
