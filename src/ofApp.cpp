@@ -178,6 +178,8 @@ void ofApp::mousePressed(int x, int y, int button){
   
   if (button == 0 && (i > -1 && j > -1)) {
     m_aButtons[i][j].toggleOffOn();
+    prevDragI = i; // makes it so first click drag doesn't get turned toggled. 
+    prevDragJ = j;
   }
 }
 
